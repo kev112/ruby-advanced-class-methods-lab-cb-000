@@ -5,12 +5,11 @@ class Song
   def initialize(name, artist_name)
     @name = name
     @artist_name = artist_name
+    @all < self
   end
 
   def self.create
-    song = self.new(name, artist_name)
-    @@all << song
-    song
+    song = self.new
   end
 
   def save
